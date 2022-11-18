@@ -1,7 +1,8 @@
 {
 	"name": "Simple PWA",
 	"short_name": "Simple PWA",
-	"display": "standalone",
+	"display": "fullscreen",
+	"orientation": "portrait-primary",
 	"start_url": "./?utm_source=pwa_install",
 	"scope": ".",
 	"theme_color": "#000",
