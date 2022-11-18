@@ -1,5 +1,7 @@
 const cacheName = "cache1"; // Change value to force update
 
+const version = "V1.0000";
+
 self.addEventListener("install", event => {
 	// Kick out the old service worker
 	self.skipWaiting();
