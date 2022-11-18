@@ -1,6 +1,6 @@
 {
-	"name": "Simple PWA",
-	"short_name": "Simple PWA",
+	"name": "Chrome PWA bug test",
+	"short_name": "Chrome PWA bug test",
 	"display": "fullscreen",
 	"orientation": "portrait-primary",
 	"start_url": "./?utm_source=pwa_install",
