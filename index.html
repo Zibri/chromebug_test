@@ -80,13 +80,11 @@
 		<div class="container">
 			<h2 id="what">What is this?</h2>
 			<p>Chrome PWA bugs tester app is a Progressive Web App to show a few bugs in google chrome.
-			<p>Simple PWA is "offline-first", using a <a href="https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker#cache_then_network" target="_blank" rel="noopener">"cache first"</a> caching strategy, which means on load, two asynchronous requests are kicked off&#x2014;one to the cache, and one to the network. If there's a cached version available, it is used, but the updated version is fetched and stored for the next load. To force the cache to update from the network, change the value of <a href="https://github.com/nikkifurls/simple-pwa/blob/master/sw.js#L1" target="_blank" rel="nofollow noopener"><code>cacheName</code></a> in <a href="https://github.com/nikkifurls/simple-pwa/blob/master/sw.js" target="_blank" rel="nofollow noopener"><code>sw.js</code></a>.</p>
-			<h2 class="how">How do I use it?</h2>
+			<h2 class="how">Bug list</h2>
 			<ol>
 				<li>Clone the repository from <a href="https://github.com/Zibri/chromebug_test" target="_blank" rel="noopener">https://github.com/Zibri/chromebug_test</a>.</li>
 				<li>First bug: a fullscreen app is not really fullscreen in code. Check javascript console for erors.</li>
-				<li>Error:</li>
-				<li id="err"></li>
+				<li>Error: (check console) </li><span id="err"></span>
 				<li>Second bug: iconify (press home button on android) this app and wait 10 seconds then click the app icon. The app will not start the first time but it will start the second time you click on it.</li>
 			</ol>
 		</div>
