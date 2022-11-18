@@ -84,7 +84,7 @@
 			<ol>
 				<li>Clone the repository from <a href="https://github.com/Zibri/chromebug_test" target="_blank" rel="noopener">https://github.com/Zibri/chromebug_test</a>.</li>
 				<li>First bug: a fullscreen app is not really fullscreen in code. Check javascript console for erors.</li>
-				<li>Error: (check console) </li><span id="err"></span>
+				<li>Error: Uncaught (in promise) DOMException: The page needs to be fullscreen in order to call screen.orientation.lock(). (check console) </li>
 				<li>Second bug: iconify (press home button on android) this app and wait 10 seconds then click the app icon. The app will not start the first time but it will start the second time you click on it.</li>
 			</ol>
 		</div>
@@ -96,12 +96,7 @@
 		</div>
 	</footer>
 	 <script>
-		 		try {
-					screen.orientation.lock('portrait');
-				} catch (e) {
-					document.getElementById("err").innerHTML = e.message;
-				}
-
+		 screen.orientation.lock('portrait');
 	 </script>
 	 
  </body>
